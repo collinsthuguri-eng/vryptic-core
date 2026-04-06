@@ -20,6 +20,7 @@ typedef struct {
 NpccSeal perform_hardware_handshake(void* raw_frame_buffer);
 
 // Bridges the NpccSeal to the Solana Seed Vault for signing
+
 int anchor_to_seed_vault(NpccSeal* seal);
 
 #endif // VRYPTIC_HAL_H
