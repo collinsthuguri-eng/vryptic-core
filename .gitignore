@@ -1,0 +1,17 @@
+# --- Rust/Anchor ---
+target/
+**/*.rs.bk
+Cargo.lock
+
+# --- Android/Mobile ---
+build/
+.gradle/
+local.properties
+*.iml
+.idea/
+capture_test_data/
+
+# --- Environment/Secret ---
+.env
+secret.json
+**/*.key
