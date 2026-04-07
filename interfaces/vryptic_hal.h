@@ -13,7 +13,7 @@
 typedef struct {
     uint8_t fingerprint[64];    // Unique silicon noise ID (PRNU-derived)
     uint64_t capture_epoch;     // Verified hardware timestamp
-    uint32_t confidence_score;  // Probabilistic match rating
+    uint32_t confidence_score;  // Truth Floor Index (Tf) mapped to uint32 scale — threshold: 0.85
 } NpccSeal;
 
 // Initiates Asynchronous Hardware Attestation (AHA)
