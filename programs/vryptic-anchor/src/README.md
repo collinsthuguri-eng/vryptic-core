@@ -1,1 +1,0 @@
-# VRYPTIC Programs Hub
