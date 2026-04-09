@@ -13,7 +13,12 @@ pub trait VrypticAttestor {
 
 #[derive(Debug)]
 pub enum AttestationError {
+    /// PRNU fingerprint extracted from sensor does not match the registered hardware profile.
     HardwareSensorMismatch,
+    /// Neural Floor (Ψ) verification timeout — the deep learning forensic analysis layer
+    /// failed to complete within the required window. Media is held pending retry.
     NeuralSyncTimeout,
+    /// AHA Protocol active — device is operating in a zero-connectivity environment.
+    /// Truth Seal is sealed locally in the TEE and will sync to the ledger on reconnection.
     ZeroConnectivityHold,
 }
