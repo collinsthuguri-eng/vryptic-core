@@ -1,12 +1,12 @@
 VRYPTIC Protocol: Hardware-to-Ledger Provenance
 Establishing a Universal Standard of Truth (UST) for the Generative AI Era.
-VRYPTIC is a Decentralized Physical Infrastructure (DePIN) protocol that anchors digital media to physical reality. By extracting unique PRNU (Photo-Response Non-Uniformity) silicon fingerprints from CMOS sensors at the point of capture — below the OS layer, before any software can interfere — VRYPTIC creates an immutable provenance record secured by the Solana Ledger.
+VRYPTIC is a Decentralized Physical Infrastructure (DePIN) protocol that anchors digital media to physical reality. By extracting unique PRNU (Photo-Response Non-Uniformity) silicon fingerprints from CMOS sensors at the point of capture — below the OS layer, before any software can interfere — VRYPTIC creates an immutable provenance record secured by the  Ledger.
 We don't verify the pixels. We verify the physics.
 🛠 The Architecture
 VRYPTIC operates a hybrid-source model to ensure hardware-level integrity:
 Open Interface: A public HAL (Hardware Abstraction Layer) bridge for mobile dApps to request and verify Truth Seals.
-On-Chain Validation: Rust-based Anchor programs utilizing Solana State Compression for scalable, low-cost provenance indexing (~$0.0001 per Truth Record).
-Secure Module (Proprietary): The NPCC (Neural-Physical Cross-Correlation) engine, executed within the AOSP StrongBox and Solana Seed Vault Trusted Execution Environments (TEE). This module is not open-sourced to protect protocol integrity.
+On-Chain Validation: Rust-based Anchor programs utilizing  State Compression for scalable, low-cost provenance indexing (~$0.0001 per Truth Record).
+Secure Module (Proprietary): The NPCC (Neural-Physical Cross-Correlation) engine, executed within the AOSP StrongBox and  Seed Vault Trusted Execution Environments (TEE). This module is not open-sourced to protect protocol integrity.
 The NPCC Algorithm
 The core identity:
 I = x ∘ (1 + K) + Ξ
@@ -29,7 +29,7 @@ Tf ≤ 0.30 → ❌ REJECTED — Synthetic media detected
 Hardware-Rooted Trust: Validates the physical sensor, not just the pixels.
 Zero-Connectivity Resilience: The AHA (Asynchronous Hardware Attestation) Protocol enables offline truth sealing — proofs are signed at source and anchored to the ledger the moment connectivity is restored.
 Deepfake Immunity: Neutralizes AI-generated imagery by verifying PRNU silicon fingerprints that no generative model can replicate.
-Solana Native: Integrated with the Solana Mobile Stack (SMS), AOSP StrongBox, and Seed Vault for flagship-grade security.
+ Native: Integrated with the  Mobile Stack (), AOSP StrongBox, and Seed Vault for flagship-grade security.
 Pseudonymous by Design: Zero-knowledge provenance — we verify the device, not the person.
 📂 Repository Structure
 ├── api/
@@ -38,7 +38,7 @@ Pseudonymous by Design: Zero-knowledge provenance — we verify the device, not 
 │   │   └── interface.rs             # VrypticAttestor trait — NPCC correlation & vault signing
 │   ├── vryptic-explorer/            # Public provenance dashboard backend
 │   │   ├── explorer_specs.md        # Provenance Timeline, Integrity Status, Sentinel Map specs
-│   │   └── aggregator.rs            # IExplorerAggregator — merges Solana + Arweave data
+│   │   └── aggregator.rs            # IExplorerAggregator — merges  + Arweave data
 │   ├── vryptic-ledger-api/          # On-chain Truth Seal registration interface
 │   │   └── README.md
 │   └── vryptic-social-api/          # External platform verification gateway
@@ -74,7 +74,7 @@ Pseudonymous by Design: Zero-knowledge provenance — we verify the device, not 
 ├── .gitignore
 ├── LICENSE                          # Apache 2.0 (open components)
 └── README.md
-Note on program structure: programs/vryptic-anchor is the R&D sandbox — the testing ground for early SMS interactions, Merkle tree experiments, and integration tests. programs/vryptic-core is the production ledger program: clean, isolated, and structured for professional security audit before Solana Mainnet deployment. This follows the standard multi-program Anchor workspace pattern.
+Note on program structure: programs/vryptic-anchor is the R&D sandbox — the testing ground for early  interactions, Merkle tree experiments, and integration tests. programs/vryptic-core is the production ledger program: clean, isolated, and structured for professional security audit before  Mainnet deployment. This follows the standard multi-program Anchor workspace pattern.
 🏗 Phase 0: Genesis Sprint
 We are currently in the Genesis Sprint — a 6-month build period moving VRYPTIC from validated architecture to a working end-to-end Hardware-to-Ledger prototype.
 Milestone 1 (Months 1–2): Security Scaffolding & Device Handshake
